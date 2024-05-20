@@ -1,0 +1,15 @@
+<%@movies.each do |movie|%>
+  <section class="movie">
+    <div class="summary">
+    <h2><%=link_to movie.title, movie_path(movie.id)%></h2>
+    <p>
+      <%=movie.released_on%>
+    </p>
+    <p>
+      Rating: <%=movie.rating%>
+      Total Gross: <%=movie.total_gross%>
+    </p>
+    <%=truncate(movie.description, length: 40, seperator: ' ')%>
+    </div>
+  </section>
+<%end%>

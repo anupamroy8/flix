@@ -1,0 +1,17 @@
+<section class="movie-details">
+  <div class="details">
+  <h2><%=@movie.title%></h2>
+  <p>
+    <%=@movie.released_on%>
+  </p>
+  <p>
+    Rating: <%=@movie.rating%>
+    Total Gross: <%=@movie.total_gross%>
+  </p>
+  <%=@movie.description%>
+  </div>
+</section>
+
+<section class="admin">
+  <%= link_to "Edit", edit_movie_path(@movie), class: "button" %>
+</section>
