@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  email: MyString
-  how_heard: MyString
-  event: one
+  stars: MyString
+  comment: MyString
+  movie: one
 
 two:
   name: MyString
-  email: MyString
-  how_heard: MyString
-  event: two
+  stars: MyString
+  comment: MyString
+  movie: two
